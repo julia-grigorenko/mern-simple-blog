@@ -2,7 +2,7 @@ import React from 'react';
 
 const UpvotesSection = ({ upvotes, articleName, setArticleInfo }) => {
     const upvoteArticle = async () => {
-        const response = await fetch(`http://localhost:8000/api/articles/${articleName}/upvote`, {
+        const response = await fetch(`/api/articles/${articleName}/upvote`, {
             method: 'post'
         });
         const body = await response.json();

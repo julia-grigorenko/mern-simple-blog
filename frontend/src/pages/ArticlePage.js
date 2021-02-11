@@ -9,7 +9,7 @@ const ArticlePage = ({ match }) => {
 
     useEffect(() => {
         const fetchArticleInfo = async () => {
-            const result = await fetch(`http://localhost:8000/api/articles/${name}`);
+            const result = await fetch(`/api/articles/${name}`);
             setArticleInfo(await result.json());
 
         };

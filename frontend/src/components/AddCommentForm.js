@@ -6,7 +6,7 @@ const AddCommentForm = ({ articleName, setArticleInfo }) => {
 
     const addComment = async () => {
 
-        const response = await fetch(`http://localhost:8000/api/articles/${articleName}/add-comment`, {
+        const response = await fetch(`/api/articles/${articleName}/add-comment`, {
             method: 'post',
             body: JSON.stringify({ postedBy: name, text: commentText}),
             headers: {

@@ -63,7 +63,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.article-list-item:hover {
+.article-list-item h3:hover {
   opacity: 0.6;
 }
 

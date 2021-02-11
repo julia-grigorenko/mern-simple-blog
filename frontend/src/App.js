@@ -5,7 +5,12 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import NavBar from './NavBar';
+import NavBar from './components/NavBar';
+import HomePage from './pages/HomePage';
+import ArticlePage from './pages/ArticlePage';
+import ArticlesListPage from './pages/ArticlesListPage';
+import AboutPage from './pages/AboutPage';
+import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
 class App extends Component {
