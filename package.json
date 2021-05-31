@@ -1,0 +1,29 @@
+{
+  "name": "mern-simple-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "man": "man"
+  },
+  "scripts": {
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && yarn start\"",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && yarn start",
+    "dev": "npx nodemon --exec npx babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulia-grigorenko/mern-simple-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulia-grigorenko/mern-simple-blog/issues"
+  },
+  "homepage": "https://github.com/yulia-grigorenko/mern-simple-blog#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "dependencies": {}
+}
